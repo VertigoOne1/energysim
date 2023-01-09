@@ -61,49 +61,60 @@ if we emit an event as something using 2000J, and the event is emitted every sec
 
 so the question is do we run messages every second for Joules... as packets of energy (like running it in virtual wires)
 
+```plain
 Scenario 1
 Oven -> Inverter -> -2000J (lost as heat)
 Inverter -> Oven -> +2000J
 Grid -> Inverter -> -2000J
+```
 
 Grid is an infinite source of Joules, the nett effect is 0 by taking the consumed Joules and turning it into a currency cost to "replenish"
 
+```plain
 Scenario 2
 Oven -> Inverter -> -2000J
 Inverter ->  Oven -> +2000J
 Battery -> Inverter -> -2000J  (battery capacity reduction by 2000J), which needs to plus from PV/Grid to reclaim by charging
+```
 
 nett is 0, thus satisfied
 
 you then subtract and add Joules to battery as it has a capacity of X Joules, 12KWh battery = 12000J/s*3600
 
+```plain
 PV -> Inverter -> +500J
 Inverter -> Battery -> +500J
 Sun -> PV -> -500J
+```
 
 The Sun is an infinite source of Joules, thus it is sinked/zero's out.
 
 ## Minimum Viable Product Definition (rough idea at the moment)
 
 We need to simulate the sun
+
 properties
 
 - irridiance W/m2
 - position in the sky modifier (for now)
 
 produces - Joules
+
 consumes - none
 
 We need to simulate intervening weather effects
+
 properties
 
 - atmospheric transparency
 - % cloud cover
 
 produces - irridiance modifier
+
 consumes - none
 
 We need to simulate a solar panel (and be able to make multiple)
+
 properties
 
 - maximum capacity
@@ -112,6 +123,7 @@ properties
 - angle (later)
 
 produces - Joules (research how this exactly works with panels, volts/amps/mppt), but for now, it can be calculated ignoring mppt)
+
 consumes - sun, weather
 
 Sun --> Weather --> PV = X Joules
@@ -138,9 +150,11 @@ properties
 - losses
 
 produces - Joules
+
 consumes - Joules
 
 we need to simulate an oven
+
 properties
 
 - power requirements
@@ -151,6 +165,7 @@ produces
 - Joules
 
 Some kind of UI to do basic management
+
 some kind of "watcher" to see how things are flowing
 
 The inverter would listen for consumption and production events, and calculate the nett Joules, and emit counteracting Joules to satisfy the equation. This results in your input/output energy matrix. A dashboard can then display the decision which results in the flow
