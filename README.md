@@ -28,7 +28,7 @@ Ability to spin up deployments on the fly on a kubernetes namespace. (Which will
 Everything is a container, the sun, the weather, the panels, the inverter, the battery, the oven, the geyser, the tv.
 Lots and lots of properties, but we can start small.
 
-## New concepts learned from this
+## New concepts learned from this for myself
 
 Appplication configuration management via async messages to the apps
 
@@ -48,6 +48,8 @@ State polling
 App -> prometheus for the object metrics (oven, how much power consumed?), and some grafana dashboards
 
 Websocket application UI development stuffs (autobahn)
+
+Crossbar and twisted is new to me, i know a bit of pydantic.
 
 ## More thoughts
 
