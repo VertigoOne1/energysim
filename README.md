@@ -1,8 +1,11 @@
-# Home Energy Management Simulator for home solar system building
+# Home Energy Management Simulator
+
+For simulating how your home consumes and produces energy (Home PV/Hybrid System)
 
 ## Idea
 
-The physical part of a home PV+Bat is fairly well understood, but simulating how the system would function has some gaps that might be useful to some people.
+The physical part of a home PV+Battery setup is fairly well understood, but simulating how the system would function has some gaps that might be useful to some people.
+
 Imagine being able to define your home energy consumers, producers and their properties and simulate their running in real time as actual "things" running virtually. Including weather simulation, time of day and loadshedding/outages schedules, and being able to "configure" the inverter to settings typically available to them, such as when to charge, when to discharge.
 
 The idea is to run it as a kubernetes namespace where you define solarpanels, inverters, batteries and consumers such as ovens and TV's as containers. This then becomes your "home". These produce events, which are their energy needs or production, which then results in a nett energy mix and realtime adjustable settings for their management state, consumption, production and cost. Running the tick time at a higher rate allows you to plan out how it will change into the future, and allowing you to chang things, timers/smart switches, bigger/smaller systems to see their effect.
