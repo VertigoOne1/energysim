@@ -1,0 +1,2 @@
+Update #REQ signal /s18350
+First target 0.00000689 done, +9.02%. Bought at 0.00000632 23 hours ago. Move stoploss if you want at 0.00000672.

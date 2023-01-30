@@ -1,0 +1,16 @@
+New signal: #DUSK
+
+DUSK/BTC: ideas, news. V: 1.07 BTC
+Avg: buy -1.49% from top, profit +16.49%. Risk: 18%
+
+#DUSK 
+Buying - zone around :: 0.00001572-0.00001508
+TPS
+1. -   0.00001628
+2. -   0.00001704
+3. -   0.0000178
+4. -   0.00001969
+Stop 0.00001399
+
+
+Signal: /s18639, or view all /signals

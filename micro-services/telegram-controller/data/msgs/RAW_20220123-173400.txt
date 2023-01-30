@@ -1,0 +1,16 @@
+New signal: #ILV
+
+ILV/BTC: ideas, news. V: 0.71 BTC
+Avg: buy -0.59% from top, profit +4.75%. Risk: 31%
+
+Buying  :  0.01555 -0.01621
+Market #ILV 
+SL  0.01449
+Sells:
+Target    0.01685
+Target    0.0191
+Target    0.02137
+Target    0.026
+
+
+Signal: /s18489, or view all /signals

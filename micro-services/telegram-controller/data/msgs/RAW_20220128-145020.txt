@@ -1,0 +1,15 @@
+New signal: #QNT
+
+QNT/BTC: ideas, news. V: 3.13 BTC
+Avg: buy -1.3% from top, profit +6.87%. Risk: 40%
+
+altcoin = #QNT  QNTBTC
+Accumulate range  : 0.002423 - 0.002507
+Sell 
+   0.00262
+   0.002734
+   0.003003
+SL 0.002222
+
+
+Signal: /s18633, or view all /signals

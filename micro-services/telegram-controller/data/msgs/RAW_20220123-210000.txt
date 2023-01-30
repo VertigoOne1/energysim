@@ -1,0 +1,2 @@
+Update #INJ signal /s18339
+Touched stoploss 0.0001197, bought at 0.0001315 1 d 12 hr ago. Trade closed, loss -8.97%.

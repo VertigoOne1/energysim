@@ -1,0 +1,2 @@
+Update #STX signal /s18347
+Touched stoploss 0.00003649. Trade closed with 1 targets done, +3.83% profit.

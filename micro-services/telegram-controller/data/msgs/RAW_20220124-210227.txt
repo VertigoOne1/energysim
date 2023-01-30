@@ -1,0 +1,2 @@
+Update #MBOX signal /s18320
+Touched stoploss 0.00006802. Trade closed with 1 targets done, +5.66% profit.

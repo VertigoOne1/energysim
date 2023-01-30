@@ -1,0 +1,16 @@
+New signal: #MDA
+
+MDA/BTC: ideas, news. V: 1.23 BTC
+Avg: buy -0.75% from top, profit +19.53%. Risk: 9%
+
+#MDA pair MDABTC
+Buy limit :: 0.00001019 — 0.00001062
+Sells
+Target 1  0.0000112
+Target 2  0.00001238
+Target 3  0.00001447
+Target 4  0.00001626
+Stop :0.00000972
+
+
+Signal: /s18656, or view all /signals

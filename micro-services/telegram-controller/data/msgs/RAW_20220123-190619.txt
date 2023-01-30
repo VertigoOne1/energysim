@@ -1,0 +1,15 @@
+New signal: #DYDX
+
+DYDX/BTC: ideas, news. V: 2.76 BTC
+Avg: buy -1.36% from top, profit +11.45%. Risk: 18%
+
+Coin name = #DYDX 
+Enter area  :  0.00015868-0.00016535
+TP:
+Target 1   0.00016909
+Target 2   0.00017803
+Target 3   0.00018698
+SL   0.00015131
+
+
+Signal: /s18491, or view all /signals

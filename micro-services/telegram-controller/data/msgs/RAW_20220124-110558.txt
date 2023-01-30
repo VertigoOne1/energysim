@@ -1,0 +1,12 @@
+New signal: #UMA
+
+UMA/BTC: ideas, news. V: 1.06 BTC
+Avg: buy -0.42% from top, profit +5.43%. Risk: 9%
+
+Coin name = #UMA pair UMABTC
+Entry   : 1558 -1624
+Stoploss :1429
+Targets -  1676 1898 2120
+
+
+Signal: /s18536, or view all /signals

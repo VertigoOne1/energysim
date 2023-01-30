@@ -1,0 +1,16 @@
+New signal: #REQ
+
+REQ/BTC: ideas, news. V: 1 BTC
+Avg: buy -1.32% from top, profit +15.04%. Risk: 10%
+
+#REQ 
+Buying area  :   582 — 607
+TPS
+TP 1   622
+TP 2   720
+TP 3   788
+TP 4   866
+Stop-563
+
+
+Signal: /s18587, or view all /signals

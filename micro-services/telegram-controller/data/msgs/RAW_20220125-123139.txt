@@ -1,0 +1,2 @@
+Update #TRIBE signal /s18179
+Touched stoploss 0.00002004. Trade closed with 1 targets done, +5.18% profit.

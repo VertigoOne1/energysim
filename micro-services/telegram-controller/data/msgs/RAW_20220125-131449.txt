@@ -1,0 +1,2 @@
+Update #SRM signal /s18409
+Touched stoploss 0.0000565. Trade closed with 1 targets done, +2.13% profit.

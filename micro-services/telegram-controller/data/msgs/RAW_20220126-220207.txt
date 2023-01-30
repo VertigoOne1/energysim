@@ -1,0 +1,15 @@
+New signal: #BETA
+
+BETA/BTC: ideas, news. V: 1.95 BTC
+Avg: buy -1.47% from top, profit +9.77%. Risk: 68%
+
+#BETA 
+Entry in= 0.00000968—0.00001009
+Stop loss :0.00000938
+Take Profit:
+TP 1 :  0.00001048
+TP 2 :  0.00001268
+TP 3 :  0.00001488
+
+
+Signal: /s18591, or view all /signals

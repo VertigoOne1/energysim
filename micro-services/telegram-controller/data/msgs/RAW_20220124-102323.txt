@@ -1,0 +1,15 @@
+New signal: #SYS
+
+SYS/BTC: ideas, news. V: 4.77 BTC
+Avg: buy -3.09% from top, profit +17.92%. Risk: 22%
+
+Signal for #SYS  SYSBTC
+Buy  :  0.00002259— 0.00002354
+Sell 
+1.:  0.00002416
+2.:  0.00002531
+3.:  0.00002647
+Stop loss : 0.00002171
+
+
+Signal: /s18532, or view all /signals

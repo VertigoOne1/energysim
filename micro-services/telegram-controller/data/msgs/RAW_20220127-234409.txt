@@ -1,0 +1,2 @@
+Update #VGX signal /s18464
+Touched stoploss 0.00004669. Trade closed with 2 targets done, +9.77% profit.

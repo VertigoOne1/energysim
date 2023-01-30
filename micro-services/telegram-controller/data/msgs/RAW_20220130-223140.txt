@@ -1,0 +1,16 @@
+New signal: #MDA
+
+MDA/BTC: ideas, news. V: 2.4 BTC
+Avg: buy -0.7% from top, profit +23.11%. Risk: 10%
+
+#MDA pair MDABTC
+Accumulate - zone around = 0.00001085- 0.00001124
+TPS :
+1: : 0.00001193
+2: : 0.00001262
+3: : 0.000014
+4: : 0.0000155
+SL   0.00001040
+
+
+Signal: /s18651, or view all /signals

@@ -1,0 +1,16 @@
+New signal: #TRIBE
+
+TRIBE/BTC: ideas, news. V: 0.53 BTC
+Avg: buy -0.96% from top, profit +4.85%. Risk: 8%
+
+Coin name #TRIBE 
+Accumulate it area  =  0.00002051 —0.00001968
+Stoploss   0.00001805
+Sells :
+1:  0.00002096
+2:  0.00002279
+3:  0.00002462
+4:  0.00002985
+
+
+Signal: /s18479, or view all /signals

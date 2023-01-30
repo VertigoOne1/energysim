@@ -1,0 +1,16 @@
+New signal: #HNT
+
+HNT/BTC: ideas, news. V: 0.48 BTC
+Avg: buy -1.43% from top, profit +5.55%. Risk: 39%
+
+#HNT 
+Accumulate it zones  ::  0.0002909-0.0003032
+TP:
+1:   0.0003115
+2:   0.0003509
+3:   0.000391
+4:   0.0004277
+Stop loss: 0.0002668
+
+
+Signal: /s19826

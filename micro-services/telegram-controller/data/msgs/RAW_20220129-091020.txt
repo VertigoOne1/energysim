@@ -1,0 +1,16 @@
+New signal: #WAVES
+
+WAVES/BTC: ideas, news. V: 1.27 BTC
+Avg: buy -2.82% from top, profit +7.96%. Risk: 53%
+
+Signal for #WAVES 
+Buy range : 2423 — 2525
+Sells:
+  :  2590
+  :  2707
+  :  2824
+  :  3288
+Stoploss  2299
+
+
+Signal: /s18635, or view all /signals

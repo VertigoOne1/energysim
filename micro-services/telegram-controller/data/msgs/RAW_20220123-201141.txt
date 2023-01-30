@@ -1,0 +1,12 @@
+New signal: #SUSHI
+
+SUSHI/BTC: ideas, news. V: 3.31 BTC
+Avg: buy -1.23% from top, profit +7.73%. Risk: 26%
+
+Signal = #SUSHI 
+Gain at :: 0.0001190—0.0001240
+TPs -  0.0001283 0.0001368 0.0001453 0.000163
+Stop: 0.0001091
+
+
+Signal: /s18495, or view all /signals

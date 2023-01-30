@@ -1,0 +1,12 @@
+New signal: #FXS
+
+FXS/BTC: ideas, news. V: 1.13 BTC
+Avg: buy -2.61% from top, profit +7.32%. Risk: 45%
+
+Altcoin #FXS 
+Acquire range::0.00047190 - 0.00049172
+Targets : 0.00050398  0.00053203  0.00056008  0.00061823
+SL: 0.00045456
+
+
+Signal: /s18558, or view all /signals

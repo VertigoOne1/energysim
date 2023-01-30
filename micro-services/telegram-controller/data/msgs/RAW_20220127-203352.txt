@@ -1,0 +1,12 @@
+New signal: #LRC
+
+LRC/BTC: ideas, news. V: 10.22 BTC
+Avg: buy -1.13% from top, profit +8.54%. Risk: 43%
+
+Accumulation around :   2545 —2652
+Signal = #LRC 
+Sell : 2828 3005
+Stop loss -2407
+
+
+Signal: /s18611, or view all /signals

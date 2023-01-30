@@ -1,0 +1,15 @@
+New signal: #MINA
+
+MINA/BTC: ideas, news. V: 0.74 BTC
+Avg: buy -1.31% from top, profit +6.23%. Risk: 31%
+
+ticker - #MINA 
+Get area  :: 0.00005732 —0.00005973
+Sells
+ -   0.00006182
+ -   0.00006491
+ -   0.000068
+Stop loss  0.00005508
+
+
+Signal: /s18626, or view all /signals

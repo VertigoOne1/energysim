@@ -1,0 +1,12 @@
+New signal: #ONE
+
+ONE/BTC: ideas, news. V: 4.34 BTC
+Avg: buy -1.19% from top, profit +9.98%. Risk: 27%
+
+Signal = #ONE  ONEBTC
+Get limit : 478-458
+Sells: 504  580  633  691
+Stoploss:439
+
+
+Signal: /s18646, or view all /signals

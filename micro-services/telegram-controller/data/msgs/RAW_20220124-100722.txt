@@ -1,0 +1,2 @@
+Update #FLOW signal /s18362
+Touched stoploss 0.0001312, bought at 0.0001376 2 d 0 hr ago. Trade closed, loss -4.65%.

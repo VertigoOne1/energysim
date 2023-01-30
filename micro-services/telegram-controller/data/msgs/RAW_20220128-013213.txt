@@ -1,0 +1,2 @@
+Update #ONE signal /s18480
+Touched stoploss 0.00000474. Trade closed with 2 targets done, +15.08% profit.

@@ -1,0 +1,12 @@
+New signal: #CTXC
+
+CTXC/BTC: ideas, news. V: 3.12 BTC
+Avg: buy -0.27% from top, profit +48.38%. Risk: 53%
+
+market name #CTXC 
+Enter around :: 805-839
+Targetprofit -  886, 934, 1030, 1144
+Stop -738
+
+
+Signal: /s18488, or view all /signals

@@ -1,0 +1,12 @@
+New signal: #QNT
+
+QNT/BTC: ideas, news. V: 3.29 BTC
+Avg: buy -1.31% from top, profit +7%. Risk: 35%
+
+#QNT 
+Entry zones = 0.002433-0.002536
+Targets= 0.002606 0.002843 0.003081
+Stop   0.002232
+
+
+Signal: /s18610, or view all /signals

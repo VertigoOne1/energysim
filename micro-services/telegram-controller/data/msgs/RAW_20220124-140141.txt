@@ -1,0 +1,2 @@
+Update #PERP signal /s18471
+Touched stoploss 0.0001931, bought at 0.0002181 1 d 17 hr ago. Trade closed, loss -11.46%.

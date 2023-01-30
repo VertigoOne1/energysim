@@ -1,0 +1,12 @@
+New signal: #NEAR
+
+NEAR/BTC: ideas, news. V: 14.06 BTC
+Avg: buy -1.35% from top, profit +8.04%. Risk: 52%
+
+Signal #NEAR  NEARBTC
+Enter zone around  :  0.00028747 — 0.00029955
+Stop loss-0.00027669
+Sells =  0.00030897 - 0.00032448 - 0.00034
+
+
+Signal: /s18513, or view all /signals

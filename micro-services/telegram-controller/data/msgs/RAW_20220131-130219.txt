@@ -1,0 +1,18 @@
+Signal #DUSK pair DUSKBTC
+Status: close, sold by stoploss. Lost -11.33%
+
+Alt name #DUSK 
+Accumulate at =1619 — 1553
+Sell:
+Sell: 1718
+Sell: 1809
+Sell: 1900
+Sell: 2095
+Stoploss : 1424
+
+
+Signal posted: 1 d 17 hr ago
+Bought at 0.00001606: 1 d 17 hr ago
+Stop hit: 5 h 48 min ago
+
+Go back to /signals

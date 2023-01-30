@@ -1,0 +1,2 @@
+Update #CHR signal /s18344
+Touched stoploss 0.00001499, bought at 0.0000162 1 d 20 hr ago. Trade closed, loss -7.47%.

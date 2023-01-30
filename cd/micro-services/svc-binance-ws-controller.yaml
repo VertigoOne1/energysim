@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    solution: pabs
+    app: binance-ws-controller
+    type: ClusterIP
+  name: binance-ws-controller
+  namespace: py-event-sys
+spec:
+  ports:
+  - name: http
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: binance-ws-controller
+  sessionAffinity: None
+  type: ClusterIP

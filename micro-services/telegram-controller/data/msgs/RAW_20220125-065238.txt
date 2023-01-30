@@ -1,0 +1,12 @@
+New signal: #AR
+
+AR/BTC: ideas, news. V: 2.47 BTC
+Avg: buy -2.91% from top, profit +11%. Risk: 29%
+
+ticker #AR 
+Buy  : 8836 — 8479
+Targets -  9314
+SL  7999
+
+
+Signal: /s18565, or view all /signals

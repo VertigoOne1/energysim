@@ -1,0 +1,2 @@
+Update #UMA signal /s18286
+Touched stoploss 0.0001579. Trade closed with 1 targets done, +2.2% profit.

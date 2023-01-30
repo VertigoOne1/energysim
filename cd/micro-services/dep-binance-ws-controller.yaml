@@ -1,0 +1,185 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    solution: pabs
+    app: binance-ws-controller
+  name: binance-ws-controller
+  namespace: py-event-sys
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: binance-ws-controller
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        solution: pabs
+        app: binance-ws-controller
+      annotations:
+        prometheus.io/scrape: 'true'
+        prometheus.io/port: '8080'
+    spec:
+      enableServiceLinks: false
+      containers:
+      - image: harbor.marnus.com:443/library/binance-ws-controller:latest
+        imagePullPolicy: Always
+        name: binance-ws-controller
+        volumeMounts:
+        - mountPath: /config.aml
+          subPath: config.yml
+          name: config
+        - mountPath: /config_prod.aml
+          subPath: config_prod.yml
+          name: config
+        ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
+        resources: {}
+        env:
+        - name: CONFIG_FILE
+          valueFrom:
+            secretKeyRef:
+              name: pabs-config-file
+              key: CONFIG_FILE
+              optional: false
+        - name: BROKER_URL
+          value: kafka:9092
+        - name: DEBUG_LEVEL
+          value: DEBUG
+        - name: KAFKA_DEBUG_LEVEL
+          value: INFO
+        - name: API_CONTROLLER_PORT
+          value: "8080"
+        - name: TOPIC_PREFIX
+          value: prod_
+        - name: CAMUNDA_ENGINE_URL
+          value: http://camunda:8080/engine-rest
+        - name: BINANCE_S_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: binance-secrets
+              key: BINANCE_S_SECRET
+              optional: false
+        - name: BINANCE_SANDBOX_ACTIVE
+          valueFrom:
+            secretKeyRef:
+              name: binance-secrets
+              key: BINANCE_SANDBOX_ACTIVE
+              optional: false
+        - name: BINANCE_L_APIKEY
+          valueFrom:
+            secretKeyRef:
+              name: binance-secrets
+              key: BINANCE_L_APIKEY
+              optional: false
+        - name: BINANCE_MOCK_ACTIVE
+          valueFrom:
+            secretKeyRef:
+              name: binance-secrets
+              key: BINANCE_MOCK_ACTIVE
+              optional: false
+        - name: BINANCE_S_APIKEY
+          valueFrom:
+            secretKeyRef:
+              name: binance-secrets
+              key: BINANCE_S_APIKEY
+              optional: false
+        - name: BINANCE_L_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: binance-secrets
+              key: BINANCE_L_SECRET
+              optional: false
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      initContainers:
+      - image: harbor.marnus.com:443/library/binance-ws-controller-setup:latest
+        imagePullPolicy: Always
+        name: binance-ws-controller-init
+        volumeMounts:
+        - mountPath: /config.aml
+          subPath: config.yml
+          name: config
+        - mountPath: /config_prod.aml
+          subPath: config_prod.yml
+          name: config
+        ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
+        resources: {}
+        env:
+        - name: CONFIG_FILE
+          valueFrom:
+            secretKeyRef:
+              name: pabs-config-file
+              key: CONFIG_FILE
+              optional: false
+        - name: BROKER_URL
+          value: kafka:9092
+        - name: DEBUG_LEVEL
+          value: DEBUG
+        - name: KAFKA_DEBUG_LEVEL
+          value: INFO
+        - name: API_CONTROLLER_PORT
+          value: "8080"
+        - name: TOPIC_PREFIX
+          value: prod_
+        - name: CAMUNDA_ENGINE_URL
+          value: http://camunda:8080/engine-rest
+        - name: BINANCE_S_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: binance-secrets
+              key: BINANCE_S_SECRET
+              optional: false
+        - name: BINANCE_SANDBOX_ACTIVE
+          valueFrom:
+            secretKeyRef:
+              name: binance-secrets
+              key: BINANCE_SANDBOX_ACTIVE
+              optional: false
+        - name: BINANCE_L_APIKEY
+          valueFrom:
+            secretKeyRef:
+              name: binance-secrets
+              key: BINANCE_L_APIKEY
+              optional: false
+        - name: BINANCE_MOCK_ACTIVE
+          valueFrom:
+            secretKeyRef:
+              name: binance-secrets
+              key: BINANCE_MOCK_ACTIVE
+              optional: false
+        - name: BINANCE_S_APIKEY
+          valueFrom:
+            secretKeyRef:
+              name: binance-secrets
+              key: BINANCE_S_APIKEY
+              optional: false
+        - name: BINANCE_L_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: binance-secrets
+              key: BINANCE_L_SECRET
+              optional: false
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      imagePullSecrets:
+      - name: harbor-marnus
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+      volumes:
+      - name: config
+        configMap:
+          name: binance-ws-controller-config

@@ -1,0 +1,2 @@
+Update #TFUEL signal /s18275
+Touched stoploss 0.00000346, bought at 0.00000387 2 d 6 hr ago. Trade closed, loss -10.59%.

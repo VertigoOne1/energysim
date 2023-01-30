@@ -1,0 +1,15 @@
+New signal: #CRV
+
+CRV/BTC: ideas, news. V: 3.99 BTC
+Avg: buy -2.32% from top, profit +4.76%. Risk: 53%
+
+Binance alt #CRV pair CRVBTC
+Accumulation close to  :   0.00007238 —0.00006946
+Sell :
+1 -   0.00007497
+2 -   0.00008098
+3 -   0.000087
+Stoploss   0.00006591
+
+
+Signal: /s18544, or view all /signals

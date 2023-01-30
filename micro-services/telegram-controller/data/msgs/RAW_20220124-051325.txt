@@ -1,0 +1,2 @@
+Update #BETA signal /s18494
+Touched stoploss 0.00001057, bought at 0.00001172 9 h 10 min ago. Trade closed, loss -9.81%.

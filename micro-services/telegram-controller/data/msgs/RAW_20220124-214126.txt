@@ -1,0 +1,15 @@
+New signal: #CELO
+
+CELO/BTC: ideas, news. V: 1.02 BTC
+Avg: buy -1.04% from top, profit +5.41%. Risk: 8%
+
+Alt name - #CELO  CELOBTC
+Grab price :: 0.00008355 -0.00008018
+Targets :
+1 -  0.00008675
+2 -  0.00009212
+3 -  0.0000975
+Stop :0.00007758
+
+
+Signal: /s18560, or view all /signals

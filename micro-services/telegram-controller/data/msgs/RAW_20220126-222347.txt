@@ -1,0 +1,16 @@
+New signal: #LTO
+
+LTO/BTC: ideas, news. V: 3.59 BTC
+Avg: buy -1.52% from top, profit +15.63%. Risk: 25%
+
+ticker #LTO 
+Grab in  = 510- 532
+Sells 
+ :  570
+ :  661
+ :  723
+ :  813
+Stoploss 467
+
+
+Signal: /s18595, or view all /signals

@@ -1,0 +1,16 @@
+New signal: #MDA
+
+MDA/BTC: ideas, news. V: 1.41 BTC
+Avg: buy -0.77% from top, profit +21.24%. Risk: 10%
+
+#MDA 
+Enter dip:: 0.00001059 -0.00001104
+SL  0.00001030
+Take profit
+TP 1 : 0.00001129
+TP 2 : 0.00001276
+TP 3 : 0.000014
+TP 4 : 0.00001626
+
+
+Signal: /s18654, or view all /signals

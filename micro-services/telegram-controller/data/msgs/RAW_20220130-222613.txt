@@ -1,0 +1,2 @@
+Update #BRD signal /s18526
+Touched stoploss 0.00000638. Trade closed with 1 targets done, +6.27% profit.

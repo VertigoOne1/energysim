@@ -1,0 +1,2 @@
+Update #SYS signal /s18432
+Second target 0.00002642 done, +16.03% profit. Bought at 0.00002277 20 hours ago. Move stoploss if you want at 0.00002533

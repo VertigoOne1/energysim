@@ -1,0 +1,2 @@
+Update #DYDX signal /s18482
+Touched stoploss 0.00016299. Trade closed with 1 targets done, +3.3% profit.

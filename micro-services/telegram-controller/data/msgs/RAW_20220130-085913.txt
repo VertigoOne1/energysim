@@ -1,0 +1,2 @@
+Update #ATOM signal /s18619
+Touched stoploss 0.0007413, bought at 0.0007964 2 d 10 hr ago. Trade closed, loss -6.92%.

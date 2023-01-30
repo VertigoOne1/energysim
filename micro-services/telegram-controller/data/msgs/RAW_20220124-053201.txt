@@ -1,0 +1,2 @@
+Update #KAVA signal /s18293
+Touched stoploss 0.0000867. Trade closed with 1 targets done, +4.12% profit.

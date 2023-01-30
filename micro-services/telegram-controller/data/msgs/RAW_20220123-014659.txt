@@ -1,0 +1,15 @@
+New signal: #MINA
+
+MINA/BTC: ideas, news. V: 3.64 BTC
+Avg: buy -3% from top, profit +3.03%. Risk: 51%
+
+Binance ticker #MINA 
+Entry  ::0.00006508- 0.00006245
+Sell:
+Sell    0.00006753
+Sell    0.00007072
+Sell    0.00007392
+Stoploss-0.00006012
+
+
+Signal: /s18478, or view all /signals

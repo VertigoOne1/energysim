@@ -1,0 +1,16 @@
+New signal: #REQ
+
+REQ/BTC: ideas, news. V: 2.46 BTC
+Avg: buy -1.46% from top, profit +15.97%. Risk: 10%
+
+Alt #REQ 
+Buy range  :  602 —628
+Stop loss-552
+Targets :
+TP 1-  686
+TP 2-  745
+TP 3-  866
+TP 4-  966
+
+
+Signal: /s18552, or view all /signals

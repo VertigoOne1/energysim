@@ -1,0 +1,14 @@
+New signal: #LRC
+
+LRC/BTC: ideas, news. V: 5.75 BTC
+Avg: buy -1.13% from top, profit +8.37%. Risk: 41%
+
+Binance Ticker name #LRC pair LRCBTC
+Get point ::  2494- 2599
+Stoploss   2288
+Targets 
+ -  2802
+ -  3005
+
+
+Signal: /s18649, or view all /signals

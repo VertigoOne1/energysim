@@ -1,0 +1,2 @@
+Update #MLN signal /s18357
+Touched stoploss 0.00145. Trade closed with 1 targets done, +12.89% profit.

@@ -1,0 +1,12 @@
+New signal: #THETA
+
+THETA/BTC: ideas, news. V: 11.97 BTC
+Avg: buy -4.15% from top, profit +20.36%. Risk: 66%
+
+#THETA pair THETABTC
+Get between=  768 —737
+Targets = 828 - 888
+Stop loss -676
+
+
+Signal: /s18622, or view all /signals

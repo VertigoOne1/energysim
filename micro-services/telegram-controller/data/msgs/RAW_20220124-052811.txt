@@ -1,0 +1,12 @@
+New signal: #GALA
+
+GALA/BTC: ideas, news. V: 5.22 BTC
+Avg: buy -4.32% from top, profit +0.81%. Risk: 96%
+
+#GALA pair GALABTC
+Accumulation -zone between  = 510 - 489
+Targets =  521, 590, 647, 948
+Stop loss 448
+
+
+Signal: /s18514, or view all /signals

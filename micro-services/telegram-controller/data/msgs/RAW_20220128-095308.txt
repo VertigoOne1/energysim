@@ -1,0 +1,15 @@
+New signal: #DUSK
+
+DUSK/BTC: ideas, news. V: 6.03 BTC
+Avg: buy -1.78% from top, profit +20.47%. Risk: 15%
+
+Market name - #DUSK 
+Grab point::1658 - 1728
+Stop loss : 1521
+Sells :
+1.  -  1817
+2.  -  1907
+3.  -  2151
+
+
+Signal: /s18628, or view all /signals

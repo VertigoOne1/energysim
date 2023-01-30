@@ -1,0 +1,115 @@
+import time, logging
+
+from camunda.client.external_task_client import ExternalTaskClient, ENGINE_LOCAL_BASE_URL
+from camunda.external_task.external_task import ExternalTask
+from camunda.external_task.external_task_executor import ExternalTaskExecutor
+from camunda.utils.log_utils import log_with_context
+from camunda.utils.utils import get_exception_detail
+
+from modules.logger import setup_custom_logger
+
+logger = setup_custom_logger(__name__)
+
+class ExternalTaskWorker:
+    DEFAULT_SLEEP_SECONDS = 15
+
+    def __init__(self, worker_id, base_url=ENGINE_LOCAL_BASE_URL, config=None):
+        logger.trace(f"Initialise Task Worker - {worker_id}")
+        config = config if config is not None else {}  # To avoid to have a mutable default for a parameter
+        self.worker_id = worker_id
+        self.client = ExternalTaskClient(self.worker_id, base_url, config)
+        self.executor = ExternalTaskExecutor(self.worker_id, self.client)
+        self.config = config
+        self._log_with_context(f"Created new External Task Worker with config: {self.config}")
+
+    def subscribe(self, topic_names, action, process_variables=None):
+        logger.trace(f"Subscribe - {topic_names} - {action}")
+        while True:
+            logger.trace("While loop for subscribe")
+            self._fetch_and_execute_safe(topic_names, action, process_variables)
+        logger.trace("Exited while loop")
+        self._log_with_context("Stopping worker")  # Fixme: This code seems to be unreachable?
+
+    def _fetch_and_execute_safe(self, topic_names, action, process_variables=None):
+        sleep_seconds = self._get_sleep_seconds()
+        logger.trace("_fetch_and_execute_safe")
+        try:
+            self.fetch_and_execute(topic_names, action, process_variables)
+        except NoExternalTaskFound:
+            logger.trace(f"no External Task found for Topics: {topic_names} - Process variables: {process_variables}", topic=topic_names)
+            self._log_with_context(f"no External Task found for Topics: {topic_names}, "f"Process variables: {process_variables}", topic=topic_names)
+            logger.trace("Sleeping.. - no tasks")
+            time.sleep(sleep_seconds)
+        except BaseException as e:
+            logger.trace("Sleeping.. - base exception")
+            time.sleep(sleep_seconds)
+            logger.error(f"Error fetching tasks: {topic_names} - Process variables: {process_variables}", topic=topic_names)
+            self._log_with_context(f'error fetching and executing tasks: {get_exception_detail(e)} '
+                                   f'for topic(s)={topic_names} with Process variables: {process_variables}. '
+                                   f'retrying after {sleep_seconds} seconds', exc_info=True)
+        logger.trace("Sleeping.. - fell through")
+        time.sleep(sleep_seconds)
+
+    def fetch_and_execute(self, topic_names, action, process_variables=None):
+        logger.trace(f"Fetching and Executing external tasks for Topics: {topic_names} with Process variables: {process_variables}")
+        self._log_with_context(f"Fetching and Executing external tasks for Topics: {topic_names} "
+                               f"with Process variables: {process_variables}")
+        resp_json = self._fetch_and_lock(topic_names, process_variables)
+        tasks = self._parse_response(resp_json, topic_names, process_variables)
+        logger.trace(f"{tasks}")
+        if len(tasks) == 0:
+            logger.trace("No tasks to execute")
+            # raise NoExternalTaskFound(f"no External Task found for Topics: {topic_names} - Process variables: {process_variables}")
+        else:
+            logger.trace("Tasks to execute")
+            self._execute_tasks(tasks, action)
+
+    def _fetch_and_lock(self, topic_names, process_variables=None):
+        logger.trace(f"Fetching and Locking external tasks for Topics: {topic_names} with Process variables: {process_variables}")
+        self._log_with_context(f"Fetching and Locking external tasks for Topics: {topic_names} "
+                               f"with Process variables: {process_variables}")
+        return self.client.fetch_and_lock(topic_names, process_variables)
+
+    def _parse_response(self, resp_json, topic_names, process_variables):
+        tasks = []
+        logger.trace(f"{resp_json}")
+        if resp_json:
+            for context in resp_json:
+                task = ExternalTask(context)
+                tasks.append(task)
+        else:
+            logger.trace("empty response")
+
+        tasks_count = len(tasks)
+        logger.trace(f"{tasks_count} External task(s) found for "f"Topics: {topic_names}, Process variables: {process_variables}")
+        self._log_with_context(f"{tasks_count} External task(s) found for Topics: {topic_names}, Process variables: {process_variables}")
+        logger.trace("Returning gathered tasks")
+        return tasks
+
+    def _execute_tasks(self, tasks, action):
+        for task in tasks:
+            logger.trace(f"Executing task - {task}")
+            self._execute_task(task, action)
+
+    def _execute_task(self, task, action):
+        try:
+            self.executor.execute_task(task, action)
+        except Exception as e:
+            logger.error(f"error when executing task: {get_exception_detail(e)} - {task.get_topic_name()}, {task.get_task_id()}")
+            self._log_with_context(f'error when executing task: {get_exception_detail(e)}',
+                                   topic=task.get_topic_name(), task_id=task.get_task_id(),
+                                   log_level='error', exc_info=True)
+            raise e
+
+    def _log_with_context(self, msg, topic=None, task_id=None, log_level='debug', **kwargs):
+        context = {"WORKER_ID": str(self.worker_id), "TOPIC": topic, "TASK_ID": task_id}
+        log_with_context(msg, context=context, log_level=log_level, **kwargs)
+
+    def _get_sleep_seconds(self):
+        return self.config.get("sleepSeconds", self.DEFAULT_SLEEP_SECONDS)
+
+
+class NoExternalTaskFound(Exception):
+    logger.trace(f"{Exception}")
+    logger.trace("Should continue here as it is a pass")
+    pass

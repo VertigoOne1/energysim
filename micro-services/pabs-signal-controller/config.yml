@@ -1,0 +1,56 @@
+general:
+  app_name: pabs-signal-controller
+  default_debug_level: ${DEBUG_LEVEL}
+  allow_duplicate_signals: True
+  allow_duplicate_updates: True
+  signal_processing_allowed: True
+logging:
+  enable_file_log_handler: False
+  enable_stdout_log_handler: True
+  enable_kafka_log_handler: True
+  kafka_log_handler_topic: logging
+envoy:
+  host: http://envoy:8080
+camunda:
+  engine_url: ${CAMUNDA_ENGINE_URL}
+flask:
+  default_port: ${API_CONTROLLER_PORT}
+  debug_level: ERROR
+  debug_enabled: False
+kafka:
+  enable_kafka_logging: False
+  kafka_topic_prefix: ${TOPIC_PREFIX}
+  debug_level: ${KAFKA_DEBUG_LEVEL}
+  broker_url: ${BROKER_URL}
+  raw_messages_topic: pabs_raw_messages
+  signal_controller_consumer_group: signal_controller_group
+  auto_offset_reset: latest
+  random_consumer_group: False
+  signals_topic: signals
+  binance_market_data_topic: binance_market_data
+  binance_trade_data_topic: binance_trade_data
+  binance_topic: binance
+scheduler:
+  signal_table_poll_interval: 5
+  funding_check_interval: 15
+  db_keepalive_interval: 60
+sqlalchemy:
+  database_base_directory: /data
+  db_url: mysql+mysqldb://pyeventsys:pyeventsys@mysql:3306/pabs-signal-controller?charset=utf8mb4
+funding:
+  funding_calc_model: dollar_based
+  basic_percentage_based: 0.05
+  basic_dollar_based: 40.00
+validation:
+  allow_ask_price_in_entry_zone: True
+  maximum_risk_tolerance: 70
+  mock: False
+targets:
+  max_targets_to_process: 2
+  distribution:
+    t1: [1.0]
+    t2: [0.8, 0.2]
+    t3: [0.8, 0.2, 0.0]
+    t4: [0.8, 0.2, 0.0, 0.0]
+  # This allows you to retest updates over and over, it will always reset the signal back until timeout
+  never_end_signal_update_processing: False

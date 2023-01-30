@@ -1,0 +1,16 @@
+New signal: #MDA
+
+MDA/BTC: ideas, news. V: 3.3 BTC
+Avg: buy -0.75% from top, profit +25.4%. Risk: 9%
+
+alt is #MDA 
+Buy it price ::0.00001100-0.00001147
+Stop  0.00001040
+Sell
+1:  :  0.00001213
+2:  :  0.0000128
+3:  :  0.000014
+4:  :  0.0000155
+
+
+Signal: /s18644, or view all /signals

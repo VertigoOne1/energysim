@@ -1,0 +1,12 @@
+New signal: #SCRT
+
+SCRT/BTC: ideas, news. V: 3.32 BTC
+Avg: buy -2.42% from top, profit +10.19%. Risk: 39%
+
+market name - #SCRT pair SCRTBTC
+Entry the dip : 0.00012611 - 0.00013141
+Targets profits  -  0.00013609
+Stop loss   0.00012239
+
+
+Signal: /s18658, or view all /signals

@@ -1,0 +1,2 @@
+Update #SUSHI signal /s18495
+Touched stoploss 0.0001091. Trade closed with 1 targets done, +4.65% profit.

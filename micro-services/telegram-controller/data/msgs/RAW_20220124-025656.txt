@@ -1,0 +1,12 @@
+New signal: #BETA
+
+BETA/BTC: ideas, news. V: 2.29 BTC
+Avg: buy -2.47% from top, profit +2.67%. Risk: 37%
+
+#BETA 
+Enter some:0.00001074 -0.00001120
+Target=  0.00001146 0.00001215 0.00001285
+Stop : 0.00001049
+
+
+Signal: /s18508, or view all /signals

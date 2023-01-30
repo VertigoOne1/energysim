@@ -1,0 +1,17 @@
+confluent-kafka==1.8.2
+kafka-python==2.0.1
+envyaml
+Flask==2.0.1
+requests==2.25.1
+SQLAlchemy
+sqlalchemy-utils
+marshmallow
+prometheus-client==0.11.0
+pydantic
+/modules/camunda
+mysqlclient
+ccxt
+tenacity
+unicorn-binance-suite
+unicorn_binance_websocket_api
+schedule

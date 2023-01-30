@@ -1,0 +1,2 @@
+Update #ILV signal /s18417
+Touched stoploss 0.01499. Trade closed with 1 targets done, +2.62% profit.

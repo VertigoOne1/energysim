@@ -1,0 +1,2 @@
+Update #SUSHI signal /s18454
+Touched stoploss 0.0001096, bought at 0.0001233 5 d 8 hr ago. Trade closed, loss -11.11%.

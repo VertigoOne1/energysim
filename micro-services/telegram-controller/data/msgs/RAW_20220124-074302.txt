@@ -1,0 +1,2 @@
+Update #ALICE signal /s18278
+Touched stoploss 0.0001799. Trade closed with 1 targets done, +2.68% profit.

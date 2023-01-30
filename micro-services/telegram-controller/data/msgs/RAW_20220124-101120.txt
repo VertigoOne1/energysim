@@ -1,0 +1,2 @@
+Update #DASH signal /s18334
+Touched stoploss 0.002499. Trade closed with 1 targets done, +2.72% profit.

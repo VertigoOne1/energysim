@@ -1,0 +1,15 @@
+New signal: #SYS
+
+SYS/BTC: ideas, news. V: 5.02 BTC
+Avg: buy -2.82% from top, profit +15.58%. Risk: 21%
+
+Ticker is #SYS pair SYSBTC
+Scalp area :  0.00002201—0.00002294
+Sell :
+TP 1  -  0.00002379
+TP 2  -  0.00002493
+TP 3  -  0.00002607
+Stoploss 0.00002049
+
+
+Signal: /s18542, or view all /signals

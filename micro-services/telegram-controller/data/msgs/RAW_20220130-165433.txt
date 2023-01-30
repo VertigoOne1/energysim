@@ -1,0 +1,16 @@
+New signal: #DUSK
+
+DUSK/BTC: ideas, news. V: 0.76 BTC
+Avg: buy -1.41% from top, profit +15.5%. Risk: 19%
+
+Market #DUSK  DUSKBTC
+Enter price  : 1471-1533
+Sell :
+Target1  -   1574
+Target2  -   1645
+Target3  -   1716
+Target4  -   1875
+SL  1399
+
+
+Signal: /s18643, or view all /signals

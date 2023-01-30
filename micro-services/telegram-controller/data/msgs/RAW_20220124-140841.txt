@@ -1,0 +1,2 @@
+Update #MINA signal /s18484
+Touched stoploss 0.0000631, bought at 0.00006668 22 hours ago. Trade closed, loss -5.37%.

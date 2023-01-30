@@ -1,0 +1,2 @@
+Update #SYS signal /s18532
+Touched stoploss 0.00002171. Trade closed with 1 targets done, +3.87% profit.

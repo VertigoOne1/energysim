@@ -1,0 +1,2 @@
+Update #ROSE signal /s18561
+Touched stoploss 0.000008, bought at 0.00000865 3 d 12 hr ago. Trade closed, loss -7.51%.

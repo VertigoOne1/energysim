@@ -1,0 +1,2 @@
+Update #MINA signal /s18478
+Touched stoploss 0.00006012. Trade closed with 2 targets done, +8.8% profit.

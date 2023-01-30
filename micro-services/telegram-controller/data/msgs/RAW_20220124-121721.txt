@@ -1,0 +1,2 @@
+Update #BAND signal /s18312
+Touched stoploss 0.0000909, bought at 0.0000992 2 d 4 hr ago. Trade closed, loss -8.37%.

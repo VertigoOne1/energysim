@@ -1,0 +1,16 @@
+New signal: #DCR
+
+DCR/BTC: ideas, news. V: 0.59 BTC
+Avg: buy -1.61% from top, profit +6.97%. Risk: 97%
+
+Ticker #DCR pair DCRBTC
+Acquire - zone between :: 1463 —1525
+Stop -1399
+Sell:
+Sell: 1559
+Sell: 1739
+Sell: 1935
+Sell: 2200
+
+
+Signal: /s18548, or view all /signals

@@ -1,0 +1,2 @@
+Update #AXS signal /s18400
+Touched stoploss 0.001295. Trade closed with 1 targets done, +3.36% profit.

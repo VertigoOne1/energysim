@@ -1,0 +1,2 @@
+Update #STX signal /s18516
+Touched stoploss 0.00003532, bought at 0.00003789 11 hours ago. Trade closed, loss -6.78%.

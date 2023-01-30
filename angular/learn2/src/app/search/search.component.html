@@ -1,0 +1,10 @@
+<div class="search-div">
+    we want to handle the input event
+    <span><b>search:</b></span>
+    <!-- <input type="text" (input)="changesearchValue($event)"> -->
+    <input type="text" [(ngModel)]="searchValue" />
+    <span> {{ searchValue }}</span>
+    <div>ngModel is two way data binding</div>
+    <div>you have to import angular/forms formsmodule </div>
+</div>
+

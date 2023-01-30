@@ -1,0 +1,36 @@
+general:
+  app_name: event-logging-controller
+  default_debug_level: ${DEBUG_LEVEL}
+logging:
+  enable_file_log_handler: False
+  enable_stdout_log_handler: True
+  enable_kafka_log_handler: False # DO NOT TURN ON, causes infinite recursion
+  kafka_log_handler_topic: logging
+scheduler:
+  db_keepalive_interval: 60
+envoy:
+  host: http://envoy:8080
+camunda:
+  engine_url: ${CAMUNDA_ENGINE_URL}
+flask:
+  default_port: ${API_CONTROLLER_PORT}
+  debug_level: ERROR
+  debug_enabled: False
+kafka:
+  enable_kafka_logging: False
+  kafka_topic_prefix: ${TOPIC_PREFIX}
+  logging_event_consumer_group: logging_event_group
+  debug_level: ${KAFKA_DEBUG_LEVEL}
+  broker_url: ${BROKER_URL}
+  raw_messages_topic: pabs_raw_messages
+  raw_messages_consumer_group: raw_update_message_group
+  signal_controller_consumer_group: signal_controller_group
+  auto_offset_reset: latest
+  random_consumer_group: False
+  signals_topic: signals
+  binance_market_data_topic: binance_market_data
+  binance_trade_data_topic: binance_trade_data
+  binance_topic: binance
+sqlalchemy:
+  database_base_directory: /data
+  db_url: mysql+mysqldb://pyeventsys:pyeventsys@mysql:3306/event-logging-controller?charset=utf8mb4

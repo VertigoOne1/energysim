@@ -1,0 +1,2 @@
+Update #CHESS signal /s18408
+Touched stoploss 0.00002355. Trade closed with 2 targets done, +17.7% profit.

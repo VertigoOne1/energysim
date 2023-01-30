@@ -1,0 +1,15 @@
+New signal: #DYDX
+
+DYDX/BTC: ideas, news. V: 7.89 BTC
+Avg: buy -1.53% from top, profit +12.6%. Risk: 18%
+
+coin is #DYDX pair DYDXBTC
+Accumulate it point:: 0.00016839—0.00017547
+Sells 
+1 -  0.00018121
+2 -  0.00019158
+3 -  0.00020196
+Stop loss0.00016299
+
+
+Signal: /s18482, or view all /signals

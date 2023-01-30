@@ -1,0 +1,15 @@
+New signal: #CAKE
+
+CAKE/BTC: ideas, news. V: 5.24 BTC
+Avg: buy -2.03% from top, profit +10%. Risk: 62%
+
+Market is #CAKE 
+Gain range  : 0.0001845-0.0001923
+Stoploss  0.0001800
+Sells
+    0.0001965
+    0.0002084
+    0.0002204
+
+
+Signal: /s18608, or view all /signals

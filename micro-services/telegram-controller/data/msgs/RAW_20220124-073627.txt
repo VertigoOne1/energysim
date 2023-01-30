@@ -1,0 +1,2 @@
+Update #BETA signal /s18508
+Touched stoploss 0.00001049. Trade closed with 1 targets done, +2.32% profit.

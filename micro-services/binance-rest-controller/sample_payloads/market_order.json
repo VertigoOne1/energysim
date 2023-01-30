@@ -1,0 +1,7 @@
+{
+    "tracking_number" : "123",
+    "market" : "DOGE/BTC",
+    "qty" : 10,
+    "price" : 0.00000005,
+    "order_type" : "market"
+}

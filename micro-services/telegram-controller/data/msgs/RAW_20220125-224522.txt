@@ -1,0 +1,12 @@
+New signal: #ROSE
+
+ROSE/BTC: ideas, news. V: 10.91 BTC
+Avg: buy -1.04% from top, profit +6.74%. Risk: 29%
+
+Gain =801- 862
+Ticker name = #ROSE 
+Sells =  901 941 1020 1144
+Stop  739
+
+
+Signal: /s18574, or view all /signals

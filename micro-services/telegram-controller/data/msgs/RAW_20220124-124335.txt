@@ -1,0 +1,2 @@
+Update #UNI signal /s18435
+Touched stoploss 0.0002916, bought at 0.0003154 2 d 1 hr ago. Trade closed, loss -7.55%.

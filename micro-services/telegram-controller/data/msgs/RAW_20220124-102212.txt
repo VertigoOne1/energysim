@@ -1,0 +1,16 @@
+New signal: #STX
+
+STX/BTC: ideas, news. V: 1.24 BTC
+Avg: buy -0.99% from top, profit +2.56%. Risk: 38%
+
+alt name = #STX  STXBTC
+Get range :  0.00003469-0.00003615
+Sells:
+ :  0.00003697
+ :  0.0000388
+ :  0.00004064
+ :  0.00004438
+SL   0.00003364
+
+
+Signal: /s18530, or view all /signals

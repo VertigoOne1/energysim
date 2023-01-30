@@ -1,0 +1,2 @@
+Update #BADGER signal /s18306
+Touched stoploss 0.0002829, bought at 0.0003059 2 d 2 hr ago. Trade closed, loss -7.52%.

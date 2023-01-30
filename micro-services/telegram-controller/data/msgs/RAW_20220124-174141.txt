@@ -1,0 +1,16 @@
+New signal: #DCR
+
+DCR/BTC: ideas, news. V: 0.68 BTC
+Avg: buy -0.33% from top, profit +2.11%. Risk: 8%
+
+coin - #DCR  DCRBTC
+Grab dip : 1442-1503
+Targets :
+Target 1    1537
+Target 2    1739
+Target 3    1935
+Target 4    2200
+SL -1399
+
+
+Signal: /s18557, or view all /signals

@@ -1,0 +1,2 @@
+Update #ONE signal /s18500
+Touched stoploss 0.00000503, bought at 0.00000549 1 d 8 hr ago. Trade closed, loss -8.38%.

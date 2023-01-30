@@ -1,0 +1,2 @@
+Update #CAKE signal /s18538
+Touched stoploss 0.0001906, bought at 0.0002089 3 d 19 hr ago. Trade closed, loss -8.76%.

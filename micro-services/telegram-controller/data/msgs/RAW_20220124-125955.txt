@@ -1,0 +1,16 @@
+New signal: #HIVE
+
+HIVE/BTC: ideas, news. V: 0.74 BTC
+Avg: buy -1.61% from top, profit +12.65%. Risk: 9%
+
+#HIVE 
+Acquire range  :   0.00002074 -0.00002162
+TP:
+ -  0.00002209
+ -  0.00002431
+ -  0.00002653
+ -  0.00003297
+Stop loss  0.00001999
+
+
+Signal: /s18546, or view all /signals

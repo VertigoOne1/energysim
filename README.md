@@ -22,6 +22,9 @@ autobahn - <https://github.com/crossbario>
 Message Schema management
 Pydantic - <https://docs.pydantic.dev/>
 
+UI
+Angular - v16 and node 18
+
 ## Needs
 
 Ability to spin up deployments on the fly on a kubernetes namespace. (Which will be the "home" your simulation is running on)
@@ -175,3 +178,7 @@ The inverter would listen for consumption and production events, and calculate t
 We then also need some kind of persistence for reporting, so something that sees all the events and ties them up.
 
 Switching equipment on or off is simply a matter of scaling the deployments, their events would disappear, thus their "need" or ability to produce as well.
+
+Busy learning angular
+
+https://www.youtube.com/watch?v=NMzl2pGOK_8&list=PL1BztTYDF-QNrtkvjkT6Wjc8es7QB4Gty&index=1

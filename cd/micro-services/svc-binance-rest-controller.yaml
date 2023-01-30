@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    solution: pabs
+    app: binance-rest-controller
+    type: ClusterIP
+  name: binance-rest-controller
+  namespace: py-event-sys
+spec:
+  ports:
+  - name: http
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: binance-rest-controller
+  sessionAffinity: None
+  type: ClusterIP

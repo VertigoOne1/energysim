@@ -1,0 +1,17 @@
+Signal #AR pair ARBTC /s18579
+Status: waiting for first target. 
+Unrealised profit +1.31%
+Current price: 0.000854
+
+ticker = #AR 
+Acquire between:  0.0008143 —0.0008486
+TargetsProfits=  0.0008737 - 0.0009163 - 0.000959
+Stop loss  0.0007908
+
+
+AR/BTC: ideas, news
+
+Signal posted: 22 minutes ago
+Bought at 0.0008477: 21 minutes ago
+
+Go back to /signals

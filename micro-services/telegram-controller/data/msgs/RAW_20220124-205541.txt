@@ -1,0 +1,2 @@
+Update #CELO signal /s18490
+Touched stoploss 0.00008399, bought at 0.00009011 1 d 0 hr ago. Trade closed, loss -6.79%.

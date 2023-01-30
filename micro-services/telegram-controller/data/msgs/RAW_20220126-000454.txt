@@ -1,0 +1,2 @@
+Update #CLV signal /s18373
+Touched stoploss 0.00000964. Trade closed with 1 targets done, +8.68% profit.

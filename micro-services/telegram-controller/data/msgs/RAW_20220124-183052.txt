@@ -1,0 +1,2 @@
+Update #FXS signal /s18555
+Touched stoploss 0.00047925, bought at 0.00049994 56 minutes ago. Trade closed, loss -4.14%.

@@ -1,0 +1,16 @@
+New signal: #RUNE
+
+RUNE/BTC: ideas, news. V: 4.16 BTC
+Avg: buy -1.51% from top, profit +15.84%. Risk: 33%
+
+Alt name - #RUNE 
+Entry near : 0.0001091— 0.0001047
+Targets
+ : 0.0001168
+ : 0.0001245
+ : 0.00014
+ : 0.000163
+SL  0.0000960
+
+
+Signal: /s18596, or view all /signals

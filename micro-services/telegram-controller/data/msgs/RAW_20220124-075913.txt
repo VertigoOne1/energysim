@@ -1,0 +1,2 @@
+Update #KSM signal /s18301
+Touched stoploss 0.005011, bought at 0.005293 2 d 0 hr ago. Trade closed, loss -5.33%.

@@ -1,0 +1,15 @@
+New signal: #FXS
+
+FXS/BTC: ideas, news. V: 0.59 BTC
+Avg: buy -2.35% from top, profit +7.32%. Risk: 39%
+
+Buy in ::0.00049974 - 0.00052073
+ticker name #FXS pair FXSBTC
+Sell :
+1:   0.00053578
+2:   0.00057587
+3:   0.00061597
+Stop loss 0.00047925
+
+
+Signal: /s18555, or view all /signals

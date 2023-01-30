@@ -1,0 +1,2 @@
+Update #MDA signal /s18654
+Touched stoploss 0.0000103, bought at 0.00001099 21 hours ago. Trade closed, loss -6.28%.

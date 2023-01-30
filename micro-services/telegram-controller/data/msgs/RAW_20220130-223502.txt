@@ -1,0 +1,12 @@
+New signal: #QNT
+
+QNT/BTC: ideas, news. V: 1.15 BTC
+Avg: buy -1.2% from top, profit +6.39%. Risk: 39%
+
+Take at :  0.002360-0.002460
+Binance market name - #QNT pair QNTBTC
+TP  -  0.002518  0.00264  0.002763
+Stop 0.002300
+
+
+Signal: /s18652, or view all /signals

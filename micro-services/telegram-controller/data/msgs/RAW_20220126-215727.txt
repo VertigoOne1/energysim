@@ -1,0 +1,16 @@
+New signal: #ROSE
+
+ROSE/BTC: ideas, news. V: 10.12 BTC
+Avg: buy -1.21% from top, profit +8.64%. Risk: 27%
+
+Signal #ROSE 
+Entry between  :: 799 —833
+TPS 
+1   851
+2   935
+3   1020
+4   1144
+SL 733
+
+
+Signal: /s18590, or view all /signals

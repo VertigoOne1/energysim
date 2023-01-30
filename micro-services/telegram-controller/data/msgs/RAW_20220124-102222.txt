@@ -1,0 +1,15 @@
+New signal: #MINA
+
+MINA/BTC: ideas, news. V: 0.85 BTC
+Avg: buy -2.3% from top, profit +6.39%. Risk: 37%
+
+Market name #MINA pair MINABTC
+Buying point  :: 0.00006151—0.00006410
+TPS :
+1    0.00006573
+2    0.0000697
+3    0.00007368
+Stop -0.00005999
+
+
+Signal: /s18531, or view all /signals

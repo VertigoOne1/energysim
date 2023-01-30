@@ -1,0 +1,16 @@
+New signal: #BRD
+
+BRD/BTC: ideas, news. V: 1.88 BTC
+Avg: buy -0.93% from top, profit +35.16%. Risk: 52%
+
+Binance Ticker name #BRD 
+Scalp buy limit  :: 688 - 660
+TPs
+ -  712
+ -  800
+ -  900
+ -  1000
+Stop -638
+
+
+Signal: /s18526, or view all /signals

@@ -1,0 +1,16 @@
+New signal: #DASH
+
+DASH/BTC: ideas, news. V: 4.32 BTC
+Avg: buy -0.5% from top, profit +3.8%. Risk: 31%
+
+altcoin #DASH 
+Buy - zone between :   0.002346-0.002445
+Sells
+1 -   0.002499
+2 -   0.002649
+3 -   0.0028
+4 -   0.0031
+Stop loss :0.002199
+
+
+Signal: /s18550, or view all /signals

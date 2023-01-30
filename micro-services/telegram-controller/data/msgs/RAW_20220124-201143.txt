@@ -1,0 +1,2 @@
+Update #NULS signal /s18485
+Touched stoploss 0.00000919, bought at 0.00000991 1 d 4 hr ago. Trade closed, loss -7.27%.

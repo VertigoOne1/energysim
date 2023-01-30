@@ -1,0 +1,2 @@
+Update #CELO signal /s18418
+Touched stoploss 0.00008399. Trade closed with 2 targets done, +7.27% profit.

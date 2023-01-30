@@ -1,0 +1,15 @@
+New signal: #MINA
+
+MINA/BTC: ideas, news. V: 1.51 BTC
+Avg: buy -1.68% from top, profit +5.71%. Risk: 37%
+
+coin name is #MINA pair MINABTC
+Scalp range ::5942 -6192
+Stop loss  5756
+Sells :
+TP1-   6400
+TP2-   6868
+TP3-   7337
+
+
+Signal: /s18570, or view all /signals

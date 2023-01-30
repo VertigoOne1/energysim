@@ -1,0 +1,15 @@
+New signal: #DUSK
+
+DUSK/BTC: ideas, news. V: 3.71 BTC
+Avg: buy -2.54% from top, profit +10.42%. Risk: 19%
+
+Get in=0.00001452-0.00001513
+Coin #DUSK pair DUSKBTC
+Sells :
+Sell  -  0.00001547
+Sell  -  0.00001726
+Sell  -  0.00001905
+Stop 0.00001409
+
+
+Signal: /s18562, or view all /signals

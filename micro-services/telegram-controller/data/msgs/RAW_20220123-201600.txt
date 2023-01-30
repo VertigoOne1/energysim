@@ -1,0 +1,15 @@
+New signal: #QNT
+
+QNT/BTC: ideas, news. V: 5.13 BTC
+Avg: buy -1.42% from top, profit +7.81%. Risk: 37%
+
+Take area  ::  0.002809- 0.002927
+Signal - #QNT  QNTBTC
+Sell 
+1  0.003053
+2  0.003257
+3  0.003461
+Stoploss-0.002649
+
+
+Signal: /s18497, or view all /signals

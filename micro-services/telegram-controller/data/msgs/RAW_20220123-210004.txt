@@ -1,0 +1,12 @@
+New signal: #INJ
+
+INJ/BTC: ideas, news. V: 0.98 BTC
+Avg: buy -1.44% from top, profit +3.93%. Risk: 9%
+
+#INJ  INJBTC
+Buy around:   0.0001139- 0.0001200
+Stop  0.0001099
+TPS - 0.000123  0.0001445  0.000165  0.0001843
+
+
+Signal: /s18499, or view all /signals

@@ -1,0 +1,12 @@
+New signal: #ONE
+
+ONE/BTC: ideas, news. V: 8.21 BTC
+Avg: buy -1.27% from top, profit +11.31%. Risk: 31%
+
+Enter  = 466- 486
+Binance ticker = #ONE 
+Target=  511 - 545 - 580 - 633
+Stop   439
+
+
+Signal: /s18613, or view all /signals

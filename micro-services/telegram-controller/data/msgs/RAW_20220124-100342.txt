@@ -1,0 +1,12 @@
+New signal: #FLOW
+
+FLOW/BTC: ideas, news. V: 1.98 BTC
+Avg: buy -1.58% from top, profit +4.43%. Risk: 43%
+
+altcoin #FLOW pair FLOWBTC
+Gain under :   0.0001327- 0.0001273
+Target Profit  -  0.0001361 0.0001595 0.000183
+SL  0.0001167
+
+
+Signal: /s18528, or view all /signals

@@ -1,0 +1,2 @@
+Update #FXS signal /s18424
+Touched stoploss 0.00052021. Trade closed with 1 targets done, +7.99% profit.

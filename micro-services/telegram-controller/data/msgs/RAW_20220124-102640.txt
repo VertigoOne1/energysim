@@ -1,0 +1,16 @@
+New signal: #AXS
+
+AXS/BTC: ideas, news. V: 2.97 BTC
+Avg: buy -1.3% from top, profit +8.29%. Risk: 52%
+
+market #AXS pair AXSBTC
+Entry close to ::0.001378—0.001322
+SL  0.001288
+TPs:
+  0.00141
+  0.00152
+  0.001631
+  0.001806
+
+
+Signal: /s18534, or view all /signals

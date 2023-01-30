@@ -1,0 +1,2 @@
+Update #FET signal /s18270
+Touched stoploss 0.00000904. Trade closed with 1 targets done, +6.41% profit.

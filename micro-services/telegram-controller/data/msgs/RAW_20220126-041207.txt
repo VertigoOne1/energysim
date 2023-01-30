@@ -1,0 +1,2 @@
+Update #ICP signal /s18437
+Touched stoploss 0.000533. Trade closed with 1 targets done, +4.15% profit.

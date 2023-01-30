@@ -1,0 +1,2 @@
+Update #LUNA signal /s18616
+Touched stoploss 0.0014118, bought at 0.0014546 14 minutes ago. Trade closed, loss -2.94%.

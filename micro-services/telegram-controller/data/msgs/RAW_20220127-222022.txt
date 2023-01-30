@@ -1,0 +1,12 @@
+New signal: #ATOM
+
+ATOM/BTC: ideas, news. V: 18.33 BTC
+Avg: buy -1.28% from top, profit +5.96%. Risk: 52%
+
+Binance altcoin = #ATOM pair ATOMBTC
+Buying   :  7653 —7975
+Target = 8257
+Stop  7413
+
+
+Signal: /s18619, or view all /signals

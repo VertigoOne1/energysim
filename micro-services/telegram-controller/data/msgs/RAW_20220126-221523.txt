@@ -1,0 +1,2 @@
+Update #FET signal /s18501
+Touched stoploss 0.0000085, bought at 0.00000952 3 d 0 hr ago. Trade closed, loss -10.71%.
