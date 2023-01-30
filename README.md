@@ -19,11 +19,30 @@ Messaging and Events
 twisted - <https://twisted.org/>
 autobahn - <https://github.com/crossbario>
 
+Autobahn on python
+https://github.com/crossbario/autobahn-python
+
+Autobahn on JS
+https://github.com/crossbario/autobahn-js
+
 Message Schema management
 Pydantic - <https://docs.pydantic.dev/>
 
+AsyncAPI - Event Driven Application schema management (like OpenAPI, but for async)
+
+CLI Tooling
+https://github.com/johngeorgewright/wamp-cli
+
+
 UI
 Angular - v16 and node 18
+
+Backend - develop pydantic data models in python as necessary
+convert them to AsyncAPI specs -> https://github.com/albertnadal/asyncapi-schema-pydantic
+then you can take the specs and convert them into typescript -> https://github.com/asyncapi/modelina
+which you then use as the models for messages in angular
+
+
 
 ## Needs
 
