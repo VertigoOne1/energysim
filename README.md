@@ -42,8 +42,6 @@ convert them to AsyncAPI specs -> https://github.com/albertnadal/asyncapi-schema
 then you can take the specs and convert them into typescript -> https://github.com/asyncapi/modelina
 which you then use as the models for messages in angular
 
-
-
 ## Needs
 
 Ability to spin up deployments on the fly on a kubernetes namespace. (Which will be the "home" your simulation is running on)
