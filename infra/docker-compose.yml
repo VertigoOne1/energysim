@@ -1,0 +1,129 @@
+version: '3'
+
+networks:
+  energysim:
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.22.122.0/24"
+
+services:
+  crossbar:
+    user: root
+    image: crossbario/crossbar
+    container_name: es_crossbar
+    hostname: crossbar
+    ports:
+      - 8080:8080
+    networks:
+      energysim:
+        ipv4_address: "172.22.122.10"
+    environment:
+      - CROSSBAR_URL
+      - CROSSBAR_REALM
+      - DEBUG_LEVEL
+      - API_CONTROLLER_PORT
+    volumes:
+      - './crossbar/config/node:/node'
+    restart: unless-stopped
+
+  # mysql:
+  #   image: harbor.marnus.com:443/library/py-event-sys-mysql:current
+  #   hostname: mysql
+  #   command: --default-authentication-plugin=mysql_native_password --wait_timeout=28800 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+  #   container_name: pabs-mysql
+  #   ports:
+  #     - 3306:3306
+  #   networks:
+  #     py-event-sys:
+  #       ipv4_address: "172.21.122.101"
+  #   restart: always
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: 1q2w3e~!
+  #     MYSQL_USER: pyeventsys
+  #     MYSQL_PASSWORD: pyeventsys
+  #     LANG: C.UTF_8
+  #   volumes:
+  #     - './mysql-data:/var/lib/mysql'
+
+  # prometheus:
+  #   image: 'prom/prometheus'
+  #   container_name: pabs-prometheus
+  #   networks:
+  #     - py-event-sys
+  #   user: "root"
+  #   ports:
+  #     - "9090:9090"
+  #   command: "--config.file=/etc/prometheus/config/prometheus.yml --storage.tsdb.retention.time=7d"
+  #   volumes:
+  #     - ./prometheus-config/prometheus.yml:/etc/prometheus/config/prometheus.yml
+  #     - 'prometheus_query_data:/prometheus'
+  #   restart: unless-stopped
+
+  # grafana:
+  #   image: 'grafana/grafana'
+  #   container_name: pabs-grafana
+  #   networks:
+  #     - py-event-sys
+  #   depends_on:
+  #     - prometheus
+  #   ports:
+  #     - "3000:3000"
+  #   volumes:
+  #     - 'grafana_data:/var/lib/grafana'
+
+  # envoy:
+  #   image: harbor.marnus.com:443/library/py-event-sys-envoy:current
+  #   container_name: pabs-envoy
+  #   hostname: envoy
+  #   networks:
+  #     - py-event-sys
+  #   ports:
+  #     - 9009:8080
+  #   volumes:
+  #     - ./envoy-config/envoy.yaml:/etc/envoy/envoy.yaml
+  #   restart: unless-stopped
+
+  # camunda:
+  #   image: harbor.marnus.com:443/library/py-event-sys-camunda:current
+  #   hostname: camunda
+  #   container_name: camunda
+  #   ports:
+  #     - 8080:8080
+  #   environment:
+  #     DB_DRIVER: com.mysql.cj.jdbc.Driver
+  #     DB_USERNAME: pyeventsys
+  #     DB_PASSWORD: pyeventsys
+  #     DB_URL: jdbc:mysql://172.21.122.101:3306/camunda?createDatabaseIfNotExist=true&charset=utf8mb4
+  #     DB_VALIDATE_ON_BORROW: "true"
+  #     WAIT_FOR: mysql:3306
+  #     JMX_PROMETHEUS: "true"
+  #     DEBUG: "true"
+  #   volumes:
+  #     - './camunda-webapps/examples/:/camunda/webapps/examples/'
+  #     - './camunda-webapps/h2/:/camunda/webapps/h2/'
+  #     - './camunda-webapps/camunda-invoice/:/camunda/webapps/camunda-invoice/'
+  #     - './camunda-config/bpm-platform.xml:/camunda/conf/bpm-platform.xml'
+  #   networks:
+  #     - py-event-sys
+  #   restart: unless-stopped
+
+  # reset-kafka:
+  #   build:
+  #     context: ./reset-kafka
+  #   container_name: pabs-reset-kafka
+  #   image: reset-kafka:latest
+  #   depends_on:
+  #     - kafka
+  #   networks:
+  #     - py-event-sys
+  #   environment:
+  #     - BROKER_URL
+
+# volumes:
+#   pabs_mariadb_data:
+#     driver: local
+#   prometheus_query_data:
+#     driver: local
+#   grafana_data:
+#     driver: local

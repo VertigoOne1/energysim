@@ -1,0 +1,6 @@
+envyaml
+prometheus-client
+pydantic
+schedule
+flask
+autobahn[twisted,encryption,serialization]

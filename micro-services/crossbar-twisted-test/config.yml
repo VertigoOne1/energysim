@@ -1,0 +1,21 @@
+general:
+  app_name: telegram-controller
+  default_debug_level: ${DEBUG_LEVEL}
+  emit_enabled: True
+  bpm_enabled: True
+logging:
+  enable_file_log_handler: False
+  enable_stdout_log_handler: True
+  enable_kafka_log_handler: True
+  kafka_log_handler_topic: logging
+scheduler:
+  db_keepalive_interval: 60
+envoy:
+  host: http://envoy:8080
+flask:
+  default_port: ${API_CONTROLLER_PORT}
+  debug_level: ERROR
+  debug_enabled: False
+# sqlalchemy:
+#   database_base_directory: /data
+#   db_url: mysql+mysqldb://pyeventsys:pyeventsys@mysql:3306/telegram-controller?charset=utf8mb4

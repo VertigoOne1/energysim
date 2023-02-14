@@ -2,7 +2,7 @@
 
 ## Sample crypto action signal
 
-```
+```text
 New signal: #QNT
 
 QNT/BTC: ideas, news. V: 6.93 BTC
@@ -48,6 +48,7 @@ Note that with the introduction of BPM, a lot of the Events are being wired out 
 2. Grafana dashboards for every service
 
 ### Nice to have
+
 Black listing - controller checks signal against a list of banned coins
 
 # Service Status
@@ -55,9 +56,11 @@ Black listing - controller checks signal against a list of banned coins
 Some of this is now updated because i moved to Camunda, so not all the events are used anymore as they are better done using orchestration
 
 ## event-logging-controller
+
 Fully functional
 
 ### Function
+
 Fully functional
 
 ### Status
@@ -75,6 +78,7 @@ stdout, but the code for DB dumping is there, but i'm looking to elastic search,
 ## pabs-msg-from-file
 
 ### Function
+
 directory under data/msgs can be used to inject files for manually testing eventing and classification by the other microservices
 
 ### Status
