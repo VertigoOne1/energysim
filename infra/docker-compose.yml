@@ -27,6 +27,29 @@ services:
       - './crossbar/config/node:/node'
     restart: unless-stopped
 
+  asyncapi:
+    container_name: asyncapi
+    hostname: asyncapi
+    image: nginx:latest
+    networks:
+      - energysim
+    ports:
+      - 8088:80
+    volumes:
+      - './nginx:/usr/share/nginx/html'
+    restart: unless-stopped
+
+  generator:
+    container_name: generator
+    hostname: generator
+    build: ./generator
+    entrypoint: sh -c "cd / && ag /app/models/user_stuff.yaml @asyncapi/html-template --force-write -o /app/models --debug"
+    networks:
+      - energysim
+    volumes:
+      - './nginx/models:/app/models'
+    restart: never
+
   # mysql:
   #   image: harbor.marnus.com:443/library/py-event-sys-mysql:current
   #   hostname: mysql

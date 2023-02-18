@@ -199,3 +199,45 @@ Switching equipment on or off is simply a matter of scaling the deployments, the
 Busy learning angular
 
 https://www.youtube.com/watch?v=NMzl2pGOK_8&list=PL1BztTYDF-QNrtkvjkT6Wjc8es7QB4Gty&index=1
+
+## AsyncAPI Testing
+
+From an Async API spec, you can import the method info and model
+
+```python
+from asyncapi_schema_pydantic import AsyncAPI
+async_api = AsyncAPI.load_from_file("sample.yaml")
+async_api.components.messages.get("UserSignedUp").payload.properties["displayName"] = "MyUser"
+print(async_api.json(by_alias=True, exclude_none=True, indent=2))
+```
+
+## Modelina
+
+Can give you the typescript and the pydantic too, but JUST the pydantic class, not everything else
+
+see
+
+modelina/examples/asyncapi-to-py-and-ts for one that generates both from AsyncAPI YAML spec
+
+wrapping this into an easy to use function allows you to basically just use the async api directly.
+
+To solve
+
+- Storage and development of the async api, and automatic import during application start up
+- Transmittal routines, extracting further information to combine the info from the spec to transmit.
+
+## Storage
+
+NGINX with a models directory that can be imported
+
+Adding a generator that will create nice HTMLS.. it is just slow
+
+## CLI Tooling from asyncapi
+
+
+docker run -v .:/models converter ./node_modules/.bin/asyncapi generate models python user_stuff.yaml
+
+docker run -v ${PWD}/models:/models converter ./node_modules/.bin/asyncapi generate models python /models/user_stuff.yam
+
+
+docker run -v ${PWD}/models:/models converter ./node_modules/.bin/asyncapi generate models typescript /models/user_stuff.yam

@@ -25,7 +25,7 @@ else:
 PING_MINIMUM_WAIT = 1
 
 def populate():
-    mod = models.Phone(home="123", mobile="456")
+    mod = models.UserProfile(username="marnus")
     print(mod)
     print(mod.dict())
     print(mod.json())
