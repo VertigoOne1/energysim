@@ -1,18 +1,36 @@
 asyncapi: 2.6.0
+id: 'urn:com:marnus:energysim:userservice'
 info:
   title: 'Signup Service'
   version: 1.0.0
   description: 'This service is in charge of processing user signups'
+  termsOfService: http://asyncapi.org/terms/
+  contact:
+    name: API Support
+    url: http://www.asyncapi.org/support
+    email: support@asyncapi.org
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+tags:
+  - name: default
+    externalDocs:
+      description: External docs description 1
+      url: https://www.asyncapi.com/
+externalDocs:
+  description: Find more info here
+  url: https://marnus.com
+defaultContentType: application/json
 channels:
   user/signedup:
     subscribe:
+      operationId: signedup-sub
       message:
-        description: An event describing that a user just signed up.
         $ref: '#/components/messages/UserSignedUp'
   user/signingup:
     publish:
+      operationId: signingup-pub
       message:
-        description: An event describing that a user is signing up.
         $ref: '#/components/messages/UserSignUp'
 servers:
   rabbitmq-dev:
@@ -23,8 +41,10 @@ servers:
 components:
   messages:
     UserSignedUp:
-      name: exampleMessage
-      title: Example message
+      messageId: signedupmsg
+      name: UserSignedUp
+      description: An event describing that a user just signed up.
+      title: User Signed up
       payload:
         $id: UserSignedUp
         type: object
@@ -35,8 +55,10 @@ components:
             format: email
             description: Email of the user
     UserSignUp:
-      name: exampleMessage 2
-      title: Example message 2
+      messageId: signingup
+      name: UserSignUp
+      description: An event describing that a user is signing up.
+      title: User Sign Up
       payload:
         $id: UserSignUp
         type: object

@@ -36,19 +36,21 @@ services:
     ports:
       - 8088:80
     volumes:
-      - './nginx:/usr/share/nginx/html'
-    restart: unless-stopped
+      - './nginx/html:/usr/share/nginx/html'
+      - ../data/async_api_html:/usr/share/nginx/html/async_api_html
+      - ../data/async_api_specs:/usr/share/nginx/html/async_api_specs
+    restart: "no"
 
-  generator:
-    container_name: generator
-    hostname: generator
-    build: ./generator
-    entrypoint: sh -c "cd / && ag /app/models/user_stuff.yaml @asyncapi/html-template --force-write -o /app/models --debug"
-    networks:
-      - energysim
-    volumes:
-      - './nginx/models:/app/models'
-    restart: never
+  # generator:
+  #   container_name: generator
+  #   hostname: generator
+  #   build: ./generator
+  #   entrypoint: sh -c "cd / && ag /app/models/user_stuff.yaml @asyncapi/html-template --force-write -o /app/models --debug"
+  #   networks:
+  #     - energysim
+  #   volumes:
+  #     - './nginx/models:/app/models'
+  #   restart: never
 
   # mysql:
   #   image: harbor.marnus.com:443/library/py-event-sys-mysql:current

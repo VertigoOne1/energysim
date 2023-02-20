@@ -33,14 +33,16 @@ AsyncAPI - Event Driven Application schema management (like OpenAPI, but for asy
 CLI Tooling
 https://github.com/johngeorgewright/wamp-cli
 
+## UI
 
-UI
+```plain
 Angular - v16 and node 18
 
 Backend - develop pydantic data models in python as necessary
 convert them to AsyncAPI specs -> https://github.com/albertnadal/asyncapi-schema-pydantic
 then you can take the specs and convert them into typescript -> https://github.com/asyncapi/modelina
 which you then use as the models for messages in angular
+```
 
 ## Needs
 
@@ -200,18 +202,8 @@ Busy learning angular
 
 https://www.youtube.com/watch?v=NMzl2pGOK_8&list=PL1BztTYDF-QNrtkvjkT6Wjc8es7QB4Gty&index=1
 
-## AsyncAPI Testing
 
-From an Async API spec, you can import the method info and model
-
-```python
-from asyncapi_schema_pydantic import AsyncAPI
-async_api = AsyncAPI.load_from_file("sample.yaml")
-async_api.components.messages.get("UserSignedUp").payload.properties["displayName"] = "MyUser"
-print(async_api.json(by_alias=True, exclude_none=True, indent=2))
-```
-
-## Modelina
+## Modelina/AsyncAPI
 
 Can give you the typescript and the pydantic too, but JUST the pydantic class, not everything else
 
@@ -230,14 +222,56 @@ To solve
 
 NGINX with a models directory that can be imported
 
-Adding a generator that will create nice HTMLS.. it is just slow
+## AsyncAPI Container Testing
 
-## CLI Tooling from asyncapi
+```bash
+cd infra/asyncapicli
+docker build asyncapi:latest
+```
 
+docker run -v ${PWD}/models:/models asyncapi:latest /asyncapi --help
 
-docker run -v .:/models converter ./node_modules/.bin/asyncapi generate models python user_stuff.yaml
+### Validate an async api spec
 
-docker run -v ${PWD}/models:/models converter ./node_modules/.bin/asyncapi generate models python /models/user_stuff.yam
+docker run -v ${PWD}/models:/models asyncapi:latest asyncapi validate /models/user_stuff.yaml
 
+### Generate HTML
 
-docker run -v ${PWD}/models:/models converter ./node_modules/.bin/asyncapi generate models typescript /models/user_stuff.yam
+```bash
+cd infra/nginx
+docker run -v ${PWD}/models:/models asyncapi:latest asyncapi generate fromTemplate /models/user_stuff.yaml @asyncapi/html-template --force-write -o /models
+```
+
+### Generate TypeScript Classes
+
+```bash
+docker run -v ${PWD}/models:/models asyncapi:latest asyncapi generate models typescript /models/user_stuff.yaml --tsModelType=class --tsExportType=default --tsEnumType=enum --tsModuleSystem=ESM
+```
+
+#### Typescript options
+
+```ini
+--tsEnumType=<options: enum|union>
+--tsExportType=<options: default|named>
+--tsModelType=<options: class|interface>
+--tsModuleSystem=<options: ESM|CJS>
+```
+
+### Generate Python Pydantic Classes
+
+```bash
+docker run -v ${PWD}/models:/models converter ./node_modules/.bin/asyncapi generate models python /models/user_stuff.yaml
+```
+
+#### Alternative Python
+
+From an Async API spec, you can import the method info and model using asyncapi_schema_pydantic
+
+```python
+from asyncapi_schema_pydantic import AsyncAPI
+async_api = AsyncAPI.load_from_file("sample.yaml")
+async_api.components.messages.get("UserSignedUp").payload.properties["displayName"] = "MyUser"
+print(async_api.json(by_alias=True, exclude_none=True, indent=2))
+```
+
+This also gives you every thing else, such as servers and channels and realms.
