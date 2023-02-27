@@ -27,6 +27,7 @@ services:
       - './crossbar/config/node:/node'
     restart: unless-stopped
 
+  # just needs to be built
   asyncapi:
     container_name: asyncapi
     hostname: asyncapi
@@ -39,18 +40,20 @@ services:
       - './nginx/html:/usr/share/nginx/html'
       - ../data/async_api_html:/usr/share/nginx/html/async_api_html
       - ../data/async_api_specs:/usr/share/nginx/html/async_api_specs
+      - ../data/models_python:/usr/share/nginx/html/models_python
+      - ../data/models_typescript:/usr/share/nginx/html/models_typescript
     restart: "no"
 
-  # generator:
-  #   container_name: generator
-  #   hostname: generator
-  #   build: ./generator
-  #   entrypoint: sh -c "cd / && ag /app/models/user_stuff.yaml @asyncapi/html-template --force-write -o /app/models --debug"
-  #   networks:
-  #     - energysim
-  #   volumes:
-  #     - './nginx/models:/app/models'
-  #   restart: never
+  # Just needs to be build
+  pydantic:
+    container_name: pydantic
+    hostname: pydantic
+    build:
+      context: ./modelina
+      dockerfile: Dockerfile
+    networks:
+      - energysim
+    restart: "no"
 
   # mysql:
   #   image: harbor.marnus.com:443/library/py-event-sys-mysql:current

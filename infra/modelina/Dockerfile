@@ -1,21 +1,16 @@
-FROM node:lts-alpine
+FROM modelina:latest
 
-RUN apk add --update npm
+RUN npm install @types/node @asyncapi/parser
 
-RUN mkdir -p /usr/app
+RUN mkdir /examples/pydantic && mkdir /examples/pydantic/input && mkdir /examples/pydantic/output
 
-WORKDIR /usr/app
-COPY ./ /usr/app
+COPY ./src /examples/pydantic
 
-# RUN mkdir -p /usr/app/__snapshots__
-# RUN mkdir /usr/app/data
+## For testing
+COPY ./test /input
 
-# COPY ./ /usr/app
+RUN cd /examples/pydantic && npm i
 
-# COPY __snapshots__/* /usr/app/__snapshots__/
+WORKDIR /examples/pydantic
 
-RUN npm install /usr/app
-
-VOLUME /usr/app/data
-
-CMD ["npm", "run", "start"]
+CMD npm run start

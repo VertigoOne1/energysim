@@ -5,14 +5,9 @@ sys.path.append(r'./modules')
 
 from envyaml import EnvYAML
 import os
-from pprint import pformat
-from random import randint
 import apicontroller as apicontroller
-# import modules.shared_libs as shared_libs
 
 from modules.logger import setup_custom_logger
-import models, metrics
-
 logger = setup_custom_logger(__name__)
 
 if "CONFIG_FILE" in os.environ:
@@ -22,13 +17,24 @@ else:
     logger.info("Loading Development Config")
     config = EnvYAML('config.yml')
 
+import httpimport
+httpimport.CONFIG.read(config["modules"]["profile_source"])
+
+with httpimport.remote_repo(config["modules"]["import_url"], profile=config["modules"]["import_profile"]):
+  import UserSignedUp
+
+with httpimport.remote_repo(config["modules"]["import_url"], profile=config["modules"]["import_profile"]):
+  import UserSignUp
+
+
 PING_MINIMUM_WAIT = 1
 
 def populate():
-    mod = models.UserProfile(username="marnus")
-    print(mod)
-    print(mod.dict())
-    print(mod.json())
+    newUser = UserSignUp.UserSignUp()
+    newUser.displayName = "Marnus"
+    newUser.email = "marnus@gmail.com"
+    newUser.password = "BlaBla"
+    print(newUser.json())
 
 # def give_emoji_free_text(text):
 #     return emoji.demojize(text, delimiters=(":", ":"))

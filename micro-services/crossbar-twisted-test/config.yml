@@ -3,6 +3,10 @@ general:
   default_debug_level: ${DEBUG_LEVEL}
   emit_enabled: True
   bpm_enabled: True
+modules:
+  profile_source: /httpimport.ini
+  import_profile: local
+  import_url: http://asyncapi:80/models_python
 logging:
   enable_file_log_handler: False
   enable_stdout_log_handler: True

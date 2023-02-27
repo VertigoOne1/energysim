@@ -3,27 +3,27 @@ version: '3'
 networks:
   energysim:
     external:
-      name: p_energysim
+      name: infra_energysim
 
 services:
-  pabs-msg-from-file:
+  test:
     build:
-      context: ./pabs-msg-from-file
+      context: ./crossbar-twisted-test
       dockerfile: Dockerfile
-    container_name: pabs-msg-from-file
-    image: pabs-msg-from-file:latest
+    container_name: test
+    image: test
     ports:
       - "8080"
     restart: unless-stopped
     networks:
       - energysim
-    volumes:
-      - ../pabs-msg-from-file/data:/data
-    environment:
-      - CROSSBAR_URL
-      - CROSSBAR_REALM
-      - DEBUG_LEVEL
-      - API_CONTROLLER_PORT
+    # volumes:
+    #   - ../pabs-msg-from-file/data:/data
+    # environment:
+    #   - CROSSBAR_URL
+    #   - CROSSBAR_REALM
+    #   - DEBUG_LEVEL
+    #   - API_CONTROLLER_PORT
 
   # camunda-test:
   #   build:

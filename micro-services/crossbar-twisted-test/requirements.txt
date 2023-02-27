@@ -1,3 +1,4 @@
+httpimport
 envyaml
 prometheus-client
 pydantic

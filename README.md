@@ -202,8 +202,15 @@ Busy learning angular
 
 https://www.youtube.com/watch?v=NMzl2pGOK_8&list=PL1BztTYDF-QNrtkvjkT6Wjc8es7QB4Gty&index=1
 
-
 ## Modelina/AsyncAPI
+
+Start point
+
+```bash
+cd /research/modelina
+git pull
+docker build . -t modelina:latest
+```
 
 Can give you the typescript and the pydantic too, but JUST the pydantic class, not everything else
 
@@ -275,3 +282,18 @@ print(async_api.json(by_alias=True, exclude_none=True, indent=2))
 ```
 
 This also gives you every thing else, such as servers and channels and realms.
+
+### Current version
+
+cd ./infra
+docker-compose build
+cd ../
+
+should get you the basic containers
+
+then
+
+cd ./cd
+./process_specs.sh
+
+Should generate specifications and store them in nginx
