@@ -6,14 +6,52 @@ networks:
       name: infra_energysim
 
 services:
-  test:
+  sender:
     build:
-      context: ./crossbar-twisted-test
+      context: ./autobahn-sender
       dockerfile: Dockerfile
-    container_name: test
-    image: test
+    container_name: sender
+    image: sender
     ports:
-      - "8080"
+      - "8086"
+    restart: unless-stopped
+    networks:
+      - energysim
+    # volumes:
+    #   - ../pabs-msg-from-file/data:/data
+    # environment:
+    #   - CROSSBAR_URL
+    #   - CROSSBAR_REALM
+    #   - DEBUG_LEVEL
+    #   - API_CONTROLLER_PORT
+
+  receiver:
+    build:
+      context: ./autobahn-receiver
+      dockerfile: Dockerfile
+    container_name: receiver
+    image: receiver
+    ports:
+      - "8087"
+    restart: unless-stopped
+    networks:
+      - energysim
+    # volumes:
+    #   - ../pabs-msg-from-file/data:/data
+    # environment:
+    #   - CROSSBAR_URL
+    #   - CROSSBAR_REALM
+    #   - DEBUG_LEVEL
+    #   - API_CONTROLLER_PORT
+
+  receiver2:
+    build:
+      context: ./autobahn-receiver2
+      dockerfile: Dockerfile
+    container_name: receiver2
+    image: receiver2
+    ports:
+      - "8088"
     restart: unless-stopped
     networks:
       - energysim

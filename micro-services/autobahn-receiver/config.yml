@@ -1,0 +1,25 @@
+general:
+  app_name: receiver
+  default_debug_level: DEBUG
+crossbar:
+  crossbar_url: ws://es_crossbar:8080/ws
+  crossbar_realm: energysim
+  crossbar_debug: DEBUG
+modules:
+  profile_source: ./httpimport.ini
+  import_profile: local
+  import_url: http://asyncapi:80/models_python
+logging:
+  enable_file_log_handler: False
+  enable_stdout_log_handler: True
+scheduler:
+  db_keepalive_interval: 60
+envoy:
+  host: http://envoy:8080
+flask:
+  default_port: 8088
+  debug_level: ERROR
+  debug_enabled: False
+# sqlalchemy:
+#   database_base_directory: /data
+#   db_url: mysql+mysqldb://pyeventsys:pyeventsys@mysql:3306/telegram-controller?charset=utf8mb4

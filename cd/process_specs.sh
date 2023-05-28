@@ -18,7 +18,7 @@ for FILE in ${SPECS_DIR}/*; do
     echo "Basename - ${FILENAME}"
 
     echo "Create HTML - Spec: ${SPECNAME}"
-    mkdir -p ${HTML_DIR}/output/${SPECNAME}
+    mkdir -p ${HTML_DIR}/${SPECNAME}
     docker run --user $(id -u):$(id -g) -v ${SPECS_DIR}:/input -v ${HTML_DIR}:/output asyncapi:latest asyncapi generate fromTemplate /input/${FILENAME} @asyncapi/html-template --force-write -o /output/${SPECNAME}
 
     echo "Create Python - Spec: ${SPECNAME}"
@@ -32,5 +32,14 @@ for FILE in ${SPECS_DIR}/*; do
     echo "Create TypeScript - Spec: ${SPECNAME}"
     docker run --user $(id -u):$(id -g) -v ${SPECS_DIR}:/input -v ${TS_MOD_DIR}:/output asyncapi:latest asyncapi generate models typescript /input/${FILENAME} -o /output/  --tsModelType=class --tsExportType=default --tsEnumType=enum --tsModuleSystem=ESM
 done
+
+echo "Create new spec html index file"
+
+cat <<EOT >> ${HTML_DIR}/index.html
+<H1> Specs </H1>
+
+<A href="./user_stuff/index.html">User Specs</A>
+</BODY>
+EOT
 
 echo "Done"

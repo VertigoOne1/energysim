@@ -1,0 +1,6 @@
+httpimport
+envyaml
+prometheus-client
+pydantic
+schedule
+autobahn[twisted,encryption,serialization]

@@ -38,11 +38,11 @@ services:
       - 8088:80
     volumes:
       - './nginx/html:/usr/share/nginx/html'
-      - ../data/async_api_html:/usr/share/nginx/html/async_api_html
-      - ../data/async_api_specs:/usr/share/nginx/html/async_api_specs
+      - ../data/asyncapi_html:/usr/share/nginx/html/asyncapi_html
+      - ../data/asyncapi_specs:/usr/share/nginx/html/asyncapi_specs
       - ../data/models_python:/usr/share/nginx/html/models_python
       - ../data/models_typescript:/usr/share/nginx/html/models_typescript
-    restart: "no"
+    restart: unless-stopped
 
   # Just needs to be build
   pydantic:

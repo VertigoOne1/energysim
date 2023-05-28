@@ -46,8 +46,8 @@
                             "enable_directory_listing": true
                         }
                     },
-                 "info": {
-                            "type": "nodeinfo"
+                    "info": {
+                                "type": "nodeinfo"
                     },
                     "ws": {
                         "type": "websocket"
